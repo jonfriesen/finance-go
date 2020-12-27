@@ -11,7 +11,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/piquette/finance-go/form"
+	"github.com/jonfriesen/finance-go/form"
 )
 
 // Printfer is an interface to be implemented by Logger.

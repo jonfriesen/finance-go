@@ -3,8 +3,8 @@ package quote
 import (
 	"testing"
 
-	finance "github.com/piquette/finance-go"
-	tests "github.com/piquette/finance-go/testing"
+	finance "github.com/jonfriesen/finance-go"
+	tests "github.com/jonfriesen/finance-go/testing"
 	"github.com/stretchr/testify/assert"
 )
 

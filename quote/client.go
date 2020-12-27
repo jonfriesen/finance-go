@@ -4,11 +4,11 @@ import (
 	"context"
 	"strings"
 
-	finance "github.com/piquette/finance-go"
-	chart "github.com/piquette/finance-go/chart"
-	"github.com/piquette/finance-go/datetime"
-	"github.com/piquette/finance-go/form"
-	"github.com/piquette/finance-go/iter"
+	finance "github.com/jonfriesen/finance-go"
+	chart "github.com/jonfriesen/finance-go/chart"
+	"github.com/jonfriesen/finance-go/datetime"
+	"github.com/jonfriesen/finance-go/form"
+	"github.com/jonfriesen/finance-go/iter"
 )
 
 // Client is used to invoke quote APIs.
