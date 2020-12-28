@@ -330,3 +330,54 @@ type Contract struct {
 	ImpliedVolatility float64 `json:"impliedVolatility"`
 	InTheMoney        bool    `json:"inTheMoney"`
 }
+
+// QuoteSummary is a struct containing an assortment of extended quota data.
+type QuoteSummary struct {
+	SummaryProfile struct {
+		Address1            string        `json:"address1"`
+		City                string        `json:"city"`
+		State               string        `json:"state"`
+		Zip                 string        `json:"zip"`
+		Country             string        `json:"country"`
+		Phone               string        `json:"phone"`
+		Website             string        `json:"website"`
+		Industry            string        `json:"industry"`
+		Sector              string        `json:"sector"`
+		LongBusinessSummary string        `json:"longBusinessSummary"`
+		FullTimeEmployees   int           `json:"fullTimeEmployees"`
+		CompanyOfficers     []interface{} `json:"companyOfficers"`
+		MaxAge              int           `json:"maxAge"`
+	} `json:"summaryProfile"`
+	FinancialData struct {
+		MaxAge                  int     `json:"maxAge"`
+		CurrentPrice            float64 `json:"currentPrice"`
+		TargetHighPrice         float64 `json:"targetHighPrice"`
+		TargetLowPrice          float64 `json:"targetLowPrice"`
+		TargetMeanPrice         float64 `json:"targetMeanPrice"`
+		TargetMedianPrice       float64 `json:"targetMedianPrice"`
+		RecommendationMean      float64 `json:"recommendationMean"`
+		RecommendationKey       string  `json:"recommendationKey"`
+		NumberOfAnalystOpinions int     `json:"numberOfAnalystOpinions"`
+		TotalCash               int64   `json:"totalCash"`
+		TotalCashPerShare       float64 `json:"totalCashPerShare"`
+		Ebitda                  int64   `json:"ebitda"`
+		TotalDebt               int64   `json:"totalDebt"`
+		QuickRatio              float64 `json:"quickRatio"`
+		CurrentRatio            float64 `json:"currentRatio"`
+		TotalRevenue            int64   `json:"totalRevenue"`
+		DebtToEquity            float64 `json:"debtToEquity"`
+		RevenuePerShare         float64 `json:"revenuePerShare"`
+		ReturnOnAssets          float64 `json:"returnOnAssets"`
+		ReturnOnEquity          float64 `json:"returnOnEquity"`
+		GrossProfits            int64   `json:"grossProfits"`
+		FreeCashflow            int64   `json:"freeCashflow"`
+		OperatingCashflow       int64   `json:"operatingCashflow"`
+		EarningsGrowth          float64 `json:"earningsGrowth"`
+		RevenueGrowth           float64 `json:"revenueGrowth"`
+		GrossMargins            float64 `json:"grossMargins"`
+		EbitdaMargins           float64 `json:"ebitdaMargins"`
+		OperatingMargins        float64 `json:"operatingMargins"`
+		ProfitMargins           float64 `json:"profitMargins"`
+		FinancialCurrency       string  `json:"financialCurrency"`
+	} `json:"financialData"`
+}

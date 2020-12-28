@@ -46,4 +46,13 @@ func main() {
 	// if iter.Err() != nil {
 	// 	fmt.Println(iter.Err())
 	// }
+
+	// Basic quote summary example.
+	// --------------------
+	// q, err := summary.Get(nil, "TWTR")
+	// if err != nil {
+	// 	fmt.Println(err)
+	// } else {
+	// 	fmt.Println(q)
+	// }
 }
