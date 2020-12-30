@@ -12,6 +12,7 @@ import (
 	"time"
 
 	"github.com/jonfriesen/finance-go/form"
+	"github.com/pkg/errors"
 )
 
 // Printfer is an interface to be implemented by Logger.
@@ -221,7 +222,7 @@ func (s *BackendConfiguration) Do(req *http.Request, v interface{}) error {
 		if LogLevel > 0 {
 			Logger.Printf("API error: %q\n", resBody)
 		}
-		return CreateRemoteErrorS("error response recieved from upstream api")
+		return errors.Wrap(CreateRemoteErrorS("error response recieved from upstream api"), string(resBody))
 	}
 
 	if LogLevel > 2 {
